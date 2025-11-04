@@ -4,7 +4,7 @@ import pandas as pd
 import datetime
 
 def get_db_connection():
-    conn = sqlite3.connect('bancodedados/academia.db')
+    conn = sqlite3.connect('academia.db')
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -169,4 +169,5 @@ else:
                     st.error("Falha ao excluir aluno.")
 
 st.divider()
+
 
